@@ -1,11 +1,10 @@
 import React from 'react'
+import AllRoutes from './AllRoutes';
 import './App.css';
-import Home from './Pages/Login/Login.jsx'
-import Register from './Pages/Register/Register';
 function App() {
   return (
     <div className="App">
-      <Register/>
+      <AllRoutes/>
     </div>
   );
 }
