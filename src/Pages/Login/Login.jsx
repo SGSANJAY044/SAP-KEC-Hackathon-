@@ -1,5 +1,5 @@
 import React from 'react'
-import background from './background.png'
+import background from '../../background.png'
 function Login() {
   return (
     <div className="h-screen  w-100  flex items-center shrink-0 bg-cover" style={{background:`url(${background})`}}>
@@ -20,7 +20,6 @@ function Login() {
           <div className="text-center">new? <a className="text-blue">Create account now</a></div>
         </div>
         <div className="w-2/4 h-full">
-
         </div>
         </div>
     </div>

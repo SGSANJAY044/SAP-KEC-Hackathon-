@@ -1,10 +1,11 @@
 import React from 'react'
 import './App.css';
 import Home from './Pages/Login/Login.jsx'
+import Register from './Pages/Register/Register';
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <Register/>
     </div>
   );
 }
