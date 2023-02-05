@@ -1,5 +1,5 @@
 import React from 'react'
-import background from '../../background.png'
+import background from '../../assents/background.png'
 function Register(){
     return(
         <div className="h-screen  w-100  flex items-center shrink-0 bg-contain" style={{background:`url(${background})`, backgroundSize:"cover"}}>

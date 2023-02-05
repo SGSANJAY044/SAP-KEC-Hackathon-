@@ -1,5 +1,5 @@
 import React from 'react'
-import background from '../../background.png'
+import background from '../../assets/background.png'
 function Login() {
   return (
     <div className="h-screen  w-100  flex items-center shrink-0 " style={{background:`url(${background})`, backgroundSize:"cover"}}>
@@ -17,7 +17,7 @@ function Login() {
           <div className="h-14 bg-[color:var(--primary-green)] rounded-md my-6 flex align center justify-center text-white font-semibold text-lg hover:border-2 hover:border-primarygreen hover:bg-white hover:text-primarygreen ">
             <button className="w-full">login</button>
           </div>
-          <div className="text-center">new? <a className="text-blue">Create account now</a></div>
+          <div className="text-center">new? <a className="text-blue">Register</a></div>
         </div>
         <div className="w-2/4 h-full">
         </div>
