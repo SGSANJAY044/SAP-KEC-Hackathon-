@@ -1,8 +1,9 @@
 import React from 'react'
+
 function Login() {
   return (
-    <div max-w-sm bg-black>
-      Hi  
+    <div className=' h-screen  w-100 bg-black'>
+        hi
     </div>
   )
 }
