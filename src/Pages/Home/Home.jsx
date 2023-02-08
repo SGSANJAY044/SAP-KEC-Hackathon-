@@ -3,6 +3,7 @@ import logo from '../../assets/logo.png'
 import profile from '../../assets/demo_profile.png'
 import Back from '../../assets/profile_background.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../../App.css'
 function Home() {
   return (
     <div className="flex h-screen w-full">
@@ -21,7 +22,9 @@ function Home() {
         </div>
         <div className="h-full w-full  p-10">
             <div className="h-2/4 flex ">
-                <div className="h-full w-2/5  mx-10 rounded-3xl flex flex-col justify-end p-10" style={{boxShadow:"12px 11px 28px 1px rgba(0, 0, 0, 0.25)"}}>
+                <div className="h-full w-2/5  mx-10 rounded-3xl flex flex-col justify-end p-10 relative" style={{boxShadow:"12px 11px 28px 1px rgba(0, 0, 0, 0.25)"}}>
+                    {/* <div className="absolute  w-20 h-20  rounded-tl-lg bg-gray top-0 left-0 "></div>
+                    <div className="absolute  w-32 h-32 rounded-br-full rounded-l-lg bg-gray top-1 left-1 "></div> */}
                     <div className="h-24 w-full flex flex-col">
                         <div className="h-2/4 flex">
                             <div className="h-full w-2/6 text-blue text-center text-2xl font-bold">10</div>

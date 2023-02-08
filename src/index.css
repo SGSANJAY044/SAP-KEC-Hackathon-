@@ -17,6 +17,7 @@ code {
 }
 :root{
   --gray:#373737;
+  --light-gray:#EFEFEF;
   --primary-green:#84C225;
   --secondary-green:#03A000;
   --blue:#0093DD;
