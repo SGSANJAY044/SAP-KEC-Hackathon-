@@ -7,8 +7,9 @@ module.exports = {
     extend: {
       colors:{
         "gray":"var(--gray)",
+        "lightgray":" var(--light-gray)",
         "primarygreen":"var(--primary-green)",
-        "secondary-green":"var(--secondary-green)",
+        "secondarygreen":"var(--secondary-green)",
         "blue":"var(--blue)",
       },
         backgroundImage:{
