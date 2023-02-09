@@ -7,6 +7,7 @@ import Wallet from '../../Components/Wallet'
 import Students from '../../Components/StudentsRequest'
 import StaffRequest from '../../Components/StaffRequest'
 import HodRequest from '../../Components/HodRequest'
+import AddSAP from '../../Components/AddSAP'
 function Request() {
   return (
     <div className="flex h-screen w-full">
@@ -126,6 +127,7 @@ function Request() {
                 {/* <HodRequest/> */}
             </div>
         </div>
+        {/* <AddSAP/> */}
     </div>
   )
 }
