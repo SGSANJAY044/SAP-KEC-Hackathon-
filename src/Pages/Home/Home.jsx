@@ -12,15 +12,15 @@ import Nav from '../../Components/Nav'
 function Home() {
   return (
     <div className="flex h-screen w-full">
-        {/* <Nav/> */}
+        <Nav/>
         <div className="h-full w-full  p-5 pl-20 lg:p-10 lg:pl-32">
             <div className="h-2/4 flex ">
-                {/* <Wallet/> */}
-                {/* <Profile/> */}
+                <Wallet/>
+                <Profile/>
             </div>
             <div className="h-2/4 p-10 pb-0">
-                {/* <ActivityHistory/> */}
-                {/* <HOD_link/> */}
+                <ActivityHistory/>
+                <HOD_link/>
             </div>
         </div>
     </div>
