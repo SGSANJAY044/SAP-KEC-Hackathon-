@@ -86,7 +86,7 @@ function Register() {
             <div className="relative">
               <select
                 className="block appearance-none mb-2 h-2/12 w-full bg-white border-neutral-200 border-2 hover:border-gray-300 p-2 rounded-sm  leading-tight focus:outline-none focus:shadow-outline "
-                placeholder='Department'
+                placeholder='ClassName'
                 onChange={(e) => setClassName(e.target.value)}
               >
                 <option className="text-gray-300">Class</option>

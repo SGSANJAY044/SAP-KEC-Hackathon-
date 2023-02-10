@@ -6,9 +6,7 @@ import {getAllUsers} from './user'
 
 export const login = (authData, navigate) => async (dispatch) => {
     try {
-        console.log(authData)
         const {data} = await api.UserLogin(authData)
-        console.log(data)
         dispatch({type: "AUTH", payload: data})
         dispatch(setCurrentUser(JSON.parse(localStorage.getItem("sap_portal"))))
         dispatch(getMyDetails())
@@ -17,11 +15,9 @@ export const login = (authData, navigate) => async (dispatch) => {
 
         navigate(`/home/${data._id}`)
     } catch (error) {
-        console.log(error)
         dispatch(setAlert(error.response.data, 'danger'))
     }
 }
-
 
 export const signup = (authData, navigate) => async (dispatch) => {
     try {
@@ -29,6 +25,18 @@ export const signup = (authData, navigate) => async (dispatch) => {
         dispatch({type: "AUTH", payload: data})
         dispatch(setCurrentUser(JSON.parse(localStorage.getItem("sap_portal"))))
         dispatch(setAlert("User Created successfully", "success"))
+        navigate(`/home/${data._id}`)
+    } catch (error) {
+        dispatch(setAlert(error.response.data, 'danger'))
+    }
+}
+
+export const staffsignup = (authData, navigate) => async (dispatch) => {
+    try {
+        const {data} = await api.StaffSignup(authData)
+        dispatch({type: "AUTH", payload: data})
+        dispatch(setCurrentUser(JSON.parse(localStorage.getItem("sap_portal"))))
+        dispatch(setAlert("Staff Created successfully", "success"))
         navigate(`/home/${data._id}`)
     } catch (error) {
         dispatch(setAlert(error.response.data, 'danger'))

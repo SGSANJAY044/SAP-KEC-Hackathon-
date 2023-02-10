@@ -11,18 +11,19 @@ import AddSAP from '../../Components/AddSAP'
 function Request() {
   return (
     <div className="flex h-screen w-full">
-        {/* <Nav/> */}
+        <Nav/>
         <div className="h-full w-full  p-10 pl-32">
             <div className="h-2/5 flex justify-center ">
-                {/* <Wallet/> */}
+                <Wallet/>
             </div>
             <div className="h-3/5 p-10 pb-0">
-                {/* <Students/> */}
+
+                <Students/>
                 {/* <StaffRequest/> */}
                 {/* <HodRequest/> */}
             </div>
         </div>
-        {/* <AddSAP/> */}
+        <AddSAP/> 
     </div>
   )
 }

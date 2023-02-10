@@ -4,9 +4,11 @@ const API = axios.create({baseURL: 'http://localhost:8088/'})
 
 export const UserLogin = (authdata) => API.post('/user/login', authdata)
 export const UserSignup = (authdata) => API.post('/user/register', authdata)
+export const getAllUser = (authdata) => API.post('/user/', authdata)
 
 export const StaffLogin = (authdata) => API.post('/staff/login', authdata)
 export const StaffSignup = (authdata) => API.post('/staff/register', authdata)
+export const getAllStaff = (authdata) => API.post('/staff/', authdata)
 
 export const SapGetAll = (id) => API.get(`/sap/all/${id}`)
 export const SapAdd = (id, sapdata) => API.post(`/sap/add/${id}`, sapdata)
