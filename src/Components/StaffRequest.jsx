@@ -32,7 +32,6 @@ function StaffRequest() {
                 <div className="bg-secondarygreen border-secondarygreen border-2 px-3 rounded-md flex justify-center items-center text-xl text-white font-bold p-1 cursor-pointer mx-5">Accept</div>
                 <div className="border-secondarygreen border-2 box-content px-2 rounded-md flex justify-center items-center text-xl text-secondarygreen cursor-pointer font-bold p-1" onClick={setRemark(1)}>Decline</div>
             </div>
-            
         </div>
     </div>
     <hr className='w-full h-1 mt-3 border-slate-400'/>

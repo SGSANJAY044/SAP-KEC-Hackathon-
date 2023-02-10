@@ -7,8 +7,6 @@ import Event from './Pages/Event/Event';
 import Request from './Pages/Request/Request';
 import Report from './Pages/Report/Report';
 import StaffRegister from './Pages/StaffRegister/StaffRegister';
-import Test from './Pages/Test/Test';
-import Test2 from './Pages/Test/Test2';
 
 function AllRoutes() {
     return (
