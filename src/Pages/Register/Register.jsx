@@ -36,13 +36,13 @@ function Register() {
 
   return (
     <div className="h-screen  w-100  flex items-center shrink-0 bg-contain" style={{ background: `url(${background})`, backgroundSize: "cover" }}>
-      <div className="w-3/5 h-3/5 flex flex-col mx-auto bg-white rounded-2xl">
+      <div className="w-3/5 xl:h-3/5  flex flex-col mx-auto bg-white rounded-2xl">
         <div className="flex flex-col px-8 py-10 pb-4">
           <div className="font-sans text-3xl font-bold text-gray">Sign in</div>
           <div className="font-light">Students Activity Point</div>
         </div>
-        <div className="flex w-full">
-        <div className="w-2/4 h-full flex flex-col px-8 ">
+        <div className="flex w-full flex-col xl:flex-row">
+        <div className="xl:w-2/4 w-full h-full flex flex-col px-8 ">
           <form action="" className="flex flex-col h-40 my-4 justify-between">
             <input
               type="text"
@@ -74,7 +74,7 @@ function Register() {
               required />
           </form>
         </div>
-        <div className="w-2/4 h-full flex flex-col px-8 ">
+        <div className="xl:w-2/4 w-full h-full flex flex-col px-8 ">
           <form action="" className="flex flex-col h-40 my-4 justify-between">
             <input
               type="text"
@@ -115,7 +115,7 @@ function Register() {
                   <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293,12.95l.707.707L15.657,8l-1.414-1.414L10,10.828 5.757,6.586 4.343,8z" /></svg>
                 </div>
               </div>
-              <input type="text" placeholder="Confrim Passward" className="w-full mb-2 h-2/12 p-2 border-2 border-neutral-200 rounded-sm hover:border-gray-300" required />
+              <input type="text" placeholder="Confrim Passward" className="w-full mb-2  h-2/12 p-2 border-2 border-neutral-200 rounded-sm hover:border-gray-300" required />
             </form>
           </div>
         </div>
