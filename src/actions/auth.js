@@ -10,7 +10,6 @@ export const login = (authData, navigate) => async (dispatch) => {
         const {data} = await api.UserLogin(authData)
         console.log(data)
         dispatch({type: "AUTH", payload: data})
-
         dispatch(setCurrentUser(JSON.parse(localStorage.getItem("sap_portal"))))
         dispatch(getMyDetails())
 

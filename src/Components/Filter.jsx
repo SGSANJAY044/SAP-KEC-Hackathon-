@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React,{us} from 'react'
 function Filter() {
   return (
     <div> <div className="w-full h-12 flex py-2">

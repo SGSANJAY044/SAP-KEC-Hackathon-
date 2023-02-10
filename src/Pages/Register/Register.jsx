@@ -47,28 +47,28 @@ function Register() {
             <input
               type="text"
               placeholder="First Name"
-              className="w-full h-2/12 p-2 border-2 border-neutral-200 rounded-sm  hover:border-gray-300 focus-visible:border-primarygreen "
+              className="w-full h-2/12 mb-2 p-2 border-2 border-neutral-200 rounded-sm  hover:border-gray-300 focus-visible:border-primarygreen "
               value={user_name}
               onChange={(e) => setUserName(e.target.value)}
               required />
             <input
               type="text"
               placeholder="Email"
-              className="w-full h-2/12 p-2 border-2 border-neutral-200 rounded-sm  hover:border-gray-300"
+              className="w-full h-2/12 mb-2  p-2 border-2 border-neutral-200 rounded-sm  hover:border-gray-300"
               value={kongu_email}
               onChange={(e) => setEmail(e.target.value)}
               required />
             <input
               type="text"
               placeholder="Department"
-              className="w-full h-2/12 p-2 border-2 border-neutral-200 rounded-sm  hover:border-gray-300"
+              className="w-full h-2/12 mb-2  p-2 border-2 border-neutral-200 rounded-sm  hover:border-gray-300"
               value={department}
               onChange={(e) => setDepartment(e.target.value)}
               required />
             <input
               type="passward"
               placeholder="Passward"
-              className="w-full h-2/12 p-2 border-neutral-200 border-2 rounded-sm  hover:border-gray-300"
+              className="w-full h-2/12 mb-2 p-2 border-neutral-200 border-2 rounded-sm  hover:border-gray-300"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required />
@@ -79,13 +79,13 @@ function Register() {
             <input
               type="text"
               placeholder="Roll no"
-              className="w-full h-2/12 p-2  border-2 border-neutral-200 rounded-sm hover:border-gray-300"
+              className="w-full h-2/12 mb-2 p-2  border-2 border-neutral-200 rounded-sm hover:border-gray-300"
               value={rollno}
               onChange={(e) => setRollNo(e.target.value)}
               required />
             <div className="relative">
               <select
-                className="block appearance-none h-2/12 w-full bg-white border-neutral-200 border-2 hover:border-gray-300 p-2 rounded-sm  leading-tight focus:outline-none focus:shadow-outline "
+                className="block appearance-none mb-2 h-2/12 w-full bg-white border-neutral-200 border-2 hover:border-gray-300 p-2 rounded-sm  leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Department'
                 onChange={(e) => setClassName(e.target.value)}
               >
@@ -101,7 +101,7 @@ function Register() {
               </div>
             <div className="relative">
               <select
-                className="block appearance-none h-2/12 w-full bg-white border-neutral-200 border-2 hover:border-gray-300 p-2 rounded-sm  leading-tight focus:outline-none focus:shadow-outline "
+                className="block appearance-none mb-2  h-2/12 w-full bg-white border-neutral-200 border-2 hover:border-gray-300 p-2 rounded-sm  leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Department'
                 onChange={(e) => setDepartment(e.target.value)}
               >
@@ -115,7 +115,7 @@ function Register() {
                   <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293,12.95l.707.707L15.657,8l-1.414-1.414L10,10.828 5.757,6.586 4.343,8z" /></svg>
                 </div>
               </div>
-              <input type="text" placeholder="Confrim Passward" className="w-full h-2/12 p-2 border-2 border-neutral-200 rounded-sm hover:border-gray-300" required />
+              <input type="text" placeholder="Confrim Passward" className="w-full mb-2 h-2/12 p-2 border-2 border-neutral-200 rounded-sm hover:border-gray-300" required />
             </form>
           </div>
         </div>

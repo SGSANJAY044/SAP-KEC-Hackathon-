@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 import profile from '../assets/demo_profile.png'
 
 function StaffRequest() {
+    const [Remark,setRemark]=useState(0);
   return (
     <div className="h-full w-full flex flex-col">
     <div className="w-full h-12 flex rounded-t-3xl mb-2 pt-3 pb-2 px-10 justify-between" style={{boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}} >
@@ -29,8 +30,9 @@ function StaffRequest() {
         <div className="flex w-2/5 justify-end">
             <div className=" h-full w-full text-gray text-5xl font-semibold flex justify- items-center ">
                 <div className="bg-secondarygreen border-secondarygreen border-2 px-3 rounded-md flex justify-center items-center text-xl text-white font-bold p-1 cursor-pointer mx-5">Accept</div>
-                <div className="border-secondarygreen border-2 box-content px-2 rounded-md flex justify-center items-center text-xl text-secondarygreen cursor-pointer font-bold p-1">Decline</div>
+                <div className="border-secondarygreen border-2 box-content px-2 rounded-md flex justify-center items-center text-xl text-secondarygreen cursor-pointer font-bold p-1" onClick={setRemark(1)}>Decline</div>
             </div>
+            
         </div>
     </div>
     <hr className='w-full h-1 mt-3 border-slate-400'/>
