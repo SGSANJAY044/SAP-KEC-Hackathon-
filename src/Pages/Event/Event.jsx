@@ -8,9 +8,10 @@ function Event(){
         <div className="flex h-screen w-full ">
            <Nav/>
         <div className="h-full w-full  p-10 pl-32 ">
-            {/* <Filter/> */}
+            <Filter/>
             <div className="h-full w-full ">
-            {/* <EventCard/> */}
+            <EventCard/>
+            <EventCard/>
             </div>
         </div>
         {/* <AddEvent/> */}
