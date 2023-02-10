@@ -14,7 +14,7 @@ function Event(){
             <EventCard/>
             </div>
         </div>
-        {/* <AddEvent/> */}
+        <AddEvent/>
         </div>
     )
 }

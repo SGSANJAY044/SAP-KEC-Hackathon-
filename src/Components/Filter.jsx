@@ -6,14 +6,14 @@ function Filter() {
   return (
     <div> 
     <div className="w-full h-12 flex py-2 relative">
-    <div className="w-24 flex h-full  justify-end rounded-lg items-center " style={{boxShadow:"3px 4px 10px rgba(0, 0, 0, 0.25)"}}>
-        <FilterAltOffOutlinedIcon className="text-gray"/>
-        <div className="text-xl text-gray px-2 font-normal" onClick={()=>{
+    <div className="w-24 flex h-full  justify-end rounded-lg items-center "onClick={()=>{
            if(style=="flex")
            setstyle("none")
            else
             setstyle("flex")
-        }}>Filter</div>
+        }} style={{boxShadow:"3px 4px 10px rgba(0, 0, 0, 0.25)"}}>
+        <FilterAltOffOutlinedIcon className="text-gray"/>
+        <div className="text-xl text-gray px-2 font-normal" >Filter</div>
     </div>
     <div className="px-2 mx-5 h-full w-2/5 rounded-lg flex " style={{boxShadow:"3px 4px 10px rgba(0, 0, 0, 0.25)"}}>
     <div className=""></div>
