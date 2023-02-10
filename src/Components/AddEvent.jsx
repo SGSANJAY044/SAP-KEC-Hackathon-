@@ -7,7 +7,7 @@ function AddEvent() {
         <div className="flex justify-between ">
             <div className="text-3xl text-gray font-medium">Event</div>
             <div className="flex">
-            <div className="bg-gray mx-5 ml-auto px-2 flex items-center justify-center py-0.5 rounded-md text-xl font-bold text-white text-center flex">
+            <div className="bg-gray mx-5 ml-auto px-2 flex items-center justify-center py-0.5 rounded-md text-xl font-bold text-white text-center">
                 <div className="">Date</div>
             </div>
             <div className="bg-blue ml-auto px-2  py-0.5 flex items-center justify-center rounded-md text-xl font-bold text-white text-center">Upload image</div>

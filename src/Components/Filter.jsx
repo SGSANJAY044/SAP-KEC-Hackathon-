@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import FilterAltOffOutlinedIcon from '@mui/icons-material/FilterAltOffOutlined';
-function Filter() {
+function Filter(props) {
     const[style,setstyle]=useState("none")
   return (
     <div> 
@@ -19,7 +19,16 @@ function Filter() {
     <div className=""></div>
     <input type="text"  placeholder="Search" className="h-full text-xl w-full focus:border-none"/>
     </div>
-    <div className="bg-gray ml-auto px-2  rounded-md text-xl font-bold text-white">ADD EVENT</div>
+    <div className="bg-gray ml-auto px-2  rounded-md text-xl font-bold text-white" onClick={()=>{
+           if(props.Sap=="blur"){
+           props.func1("")   
+           props.func2("none")
+           }
+           else{
+            props.func1("blur")
+            props.func2("flex")
+           }
+        }} >ADD EVENT</div>
 </div>
 <div className="h-80 w-full flex" style={{display:`${style}`}}>
     <div className="w-1/3 h-full flex flex-col ">

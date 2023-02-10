@@ -13,7 +13,7 @@ function Nav() {
             <div className="xl:h-2/4 xl:w-full h-full w-2/4 flex xl:flex-col flex-row">
                 <div className="h-10 w-10 xl:h-20 xl:w-20"><img src={logo} alt="" /></div>
                 <img src={profile} alt="" className="xl:h-12 xl:w-12 mx-3 p-5 xl:m-4 xl:my-4 xl:p-0 rounded:xl xl:rounded-lg" />
-                <Link to='/home'>
+                <Link to='/home/:id'>
                 <HomeOutlinedIcon className="text-gray ml-5 mb-5 hover:text-primarygreen" fontSize='large'/>
                 </Link>
                 <Link  to='/event'>
