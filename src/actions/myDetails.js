@@ -6,13 +6,8 @@ export const getMyDetails = () => async (dispatch) => {
     try {
         const user = await JSON.parse(localStorage.getItem('sap_portal'));
         if (user !== null) {
-            const {data} = await api.Profile(user.user._id)
-            if (data === null && user?.user?.isAdmin !== true) {
-                dispatch(setAlert("sorry we cant find the user", "warning"));
-                localStorage.clear();
-                const navigate = useNavigate();
-                navigate('/')
-            }
+            console.log(user._id)
+            const {data} = await api.Profile(user._id)
             dispatch({type: 'GET_MY_DETAILS', payload: data})
             dispatch(setAlert("Fetching or updating  details", "info", 2000))
         }

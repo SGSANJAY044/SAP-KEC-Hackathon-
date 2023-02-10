@@ -3,7 +3,7 @@ import background from '../../assets/background.png'
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setAlert } from "../../actions/alert";
-import { login } from "../../actions/auth";
+import {login } from "../../actions/auth";
 
 function Login() {
   const navigate = useNavigate();

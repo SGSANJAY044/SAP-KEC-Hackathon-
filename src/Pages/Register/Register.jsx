@@ -46,7 +46,7 @@ function Register() {
           <form action="" className="flex flex-col h-40 my-4 justify-between">
             <input
               type="text"
-              placeholder="First Name"
+              placeholder="User Name"
               className="w-full h-2/12 p-2 border-2 border-neutral-200 rounded-sm  hover:border-gray-300 focus-visible:border-primarygreen "
               value={user_name}
               onChange={(e) => setUserName(e.target.value)}
@@ -86,7 +86,7 @@ function Register() {
             <div className="relative">
               <select
                 className="block appearance-none h-2/12 w-full bg-white border-neutral-200 border-2 hover:border-gray-300 p-2 rounded-sm  leading-tight focus:outline-none focus:shadow-outline "
-                placeholder='Department'
+                placeholder='Clss'
                 onChange={(e) => setClassName(e.target.value)}
               >
                 <option className="text-gray-300">Class</option>
@@ -103,13 +103,13 @@ function Register() {
               <select
                 className="block appearance-none h-2/12 w-full bg-white border-neutral-200 border-2 hover:border-gray-300 p-2 rounded-sm  leading-tight focus:outline-none focus:shadow-outline "
                 placeholder='Department'
-                onChange={(e) => setDepartment(e.target.value)}
+                onChange={(e) => setYear(e.target.value)}
               >
                 <option className="text-gray-300">Year</option>
-                <option>A</option>
-                <option>B</option>
-                  <option>C</option>
-                  <option>D</option>
+                <option>I</option>
+                <option>II</option>
+                  <option>III</option>
+                  <option>IV</option>
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                   <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293,12.95l.707.707L15.657,8l-1.414-1.414L10,10.828 5.757,6.586 4.343,8z" /></svg>
@@ -121,7 +121,7 @@ function Register() {
         </div>
         <div className="flex justify-end px-8">
           <div className="h-10 w-32 bg-primarygreen rounded-md my-6 flex align center justify-center text-white font-semibold text-lg hover:bg-white hover:border-primarygreen hover:text-primarygreen">
-            <button>Sign in</button>
+            <button onClick={handleSubmit}>Sign in</button>
           </div>
       </div>
     </div>
